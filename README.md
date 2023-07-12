@@ -1,5 +1,20 @@
 # pyquadim
+[![CI](https://github.com/Widecss/pyquadim/actions/workflows/CI.yml/badge.svg)](https://github.com/Widecss/pyquadim/actions/workflows/CI.yml)
+[![PyPI version](https://badge.fury.io/py/pyquadim.svg)](https://badge.fury.io/py/pyquadim)
+
 简单移植 quadim 到 Python 中。（~~用于 qq bot 的涩图防和谐~~）
+
+## 安装
+使用 pip
+~~~
+pip install pyquadim
+~~~
+
+自行构建
+~~~
+pip install -r requirements.txt
+python setup.py install
+~~~
 
 ## 用法
 ~~~ python
