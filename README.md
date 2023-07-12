@@ -1,5 +1,5 @@
 # pyquadim
-简单移植 quadim 到 Python 中。
+简单移植 quadim 到 Python 中。（~~用于 qq bot 的涩图防和谐~~）
 
 ## 用法
 ~~~ python
