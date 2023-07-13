@@ -7,7 +7,8 @@ setup(
     author="Widecss",
     author_email="widecss@gmail.com",
     description="Quadim 到 Python 的简单移植。",
-    readme = "README.md",
+    long_description_content_type="text/markdown",
+    readme="README.md",
     project_urls={
         "Documentation": "https://github.com/Widecss/wiki/",
         "Code": "https://github.com/Widecss/pyquadim/",
