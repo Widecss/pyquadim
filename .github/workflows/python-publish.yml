@@ -16,7 +16,7 @@ jobs:
         python-version: [ "3.7","3.8","3.9","3.10","3.11" ]
         platform: [
           { os: "macos-latest",   python-architecture: "x64", rust-target: "x86_64-apple-darwin" },
-          { os: "ubuntu-latest", python-architecture: "x64", rust-target: "x86_64-unknown-linux-gnu" },
+          { os: "ubuntu-20.04", python-architecture: "x64", rust-target: "x86_64-unknown-linux-gnu" },
           { os: "windows-latest", python-architecture: "x64", rust-target: "x86_64-pc-windows-msvc" },
         ]
     steps:
@@ -42,7 +42,7 @@ jobs:
           python setup.py sdist bdist_wheel
 
       - name: Rename unsupported platform tag 'linux_x86_64'
-        if: ${{ matrix.platform.os == 'ubuntu-latest' }}
+        if: ${{ matrix.platform.os == 'ubuntu-20.04' }}
         run: |
           pip install --upgrade auditwheel
           auditwheel repair dist/*.whl
