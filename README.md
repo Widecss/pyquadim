@@ -10,7 +10,7 @@
 pip install pyquadim
 ~~~
 
-自行构建
+编译安装（需要 [Rust](https://www.rust-lang.org/) 环境）
 ~~~
 pip install -r requirements.txt
 python setup.py install
@@ -22,17 +22,18 @@ from PIL import Image
 import pyquadim
 
 img = Image.open("./test.jpg")
-img = img.convert("RGBA")
+img = img.convert("RGBA")  # Quadim 项目目前仅支持 RGBA
 
 w, h = img.size
 data = img.getdata()
 
-result = pyquadim.render(data, w, h, shape="yr-add", thres_ay=10., stroke_width=6)
+result = pyquadim.render(data, w, h, shape="yr-add", thres_ay=10, stroke_width=6)
 
 img.putdata(result)
 img.show()
 ~~~
 
 
-## 链接
-[Quadim](https://github.com/eternal-io/quadim)
+## 致谢
+- [Quadim](https://github.com/eternal-io/quadim)
+- [PyO3](https://github.com/PyO3/pyo3)
