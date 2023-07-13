@@ -1,5 +1,5 @@
 # pyquadim
-[![CI](https://github.com/Widecss/pyquadim/actions/workflows/CI.yml/badge.svg)](https://github.com/Widecss/pyquadim/actions/workflows/CI.yml)
+[![CI](https://github.com/Widecss/pyquadim/actions/workflows/ci.yml/badge.svg)](https://github.com/Widecss/pyquadim/actions/workflows/ci.yml)
 [![PyPI version](https://badge.fury.io/py/pyquadim.svg)](https://badge.fury.io/py/pyquadim)
 
 简单移植 quadim 到 Python 中。（~~用于 qq bot 的涩图防和谐~~）
