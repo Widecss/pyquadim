@@ -44,7 +44,7 @@ jobs:
       - name: Rename unsupported platform tag 'linux_x86_64'
         if: ${{ matrix.platform.os == 'ubuntu-latest' }}
         run: |
-          pip install -upgrade auditwheel
+          pip install --upgrade auditwheel
           auditwheel repair dist/*.whl
 
       - name: Publish to PyPI
