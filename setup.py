@@ -3,7 +3,7 @@ from setuptools_rust import Binding, RustExtension
 
 setup(
     name="pyquadim",
-    version="0.1.0",
+    version="0.1.1",
     author="Widecss",
     author_email="widecss@gmail.com",
     description="Quadim 到 Python 的简单移植。",
