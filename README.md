@@ -13,7 +13,12 @@ pip install pyquadim
 编译安装（需要 [Rust](https://www.rust-lang.org/) 环境）
 ~~~
 pip install -r requirements.txt
+
+# 直接安装
 python setup.py install
+
+# 或者打包 wheel
+python setup.py sdist bdist_wheel
 ~~~
 
 ## 用法
@@ -32,6 +37,10 @@ result = pyquadim.render(data, w, h, shape="yr-add", thres_ay=10, stroke_width=6
 img.putdata(result)
 img.show()
 ~~~
+
+
+## 问题
+- ~~能力不足，linux 用户请自行编译~~
 
 
 ## 致谢
