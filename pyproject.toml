@@ -1,3 +1,19 @@
 [build-system]
 requires = ["setuptools", "wheel", "setuptools-rust"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyquadim"
+version = "0.1.1"
+
+description = "Quadim 到 Python 的简单移植。"
+authors = [{ name = "Widecss", email = "widecss@gmail.com" }]
+
+readme = "README.md"
+long_description_content_type = "text/markdown"
+
+[project.urls]
+homepage = "https://github.com/Widecss/pyquadim/"
+documentation = "https://github.com/Widecss/wiki/"
+source = "https://github.com/Widecss/pyquadim/"
+tracker = "https://github.com/Widecss/pyquadim/issues"
