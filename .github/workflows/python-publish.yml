@@ -44,7 +44,7 @@ jobs:
       - name: Rename unsupported platform tag 'linux_x86_64'
         if: ${{ matrix.platform.os == 'ubuntu-latest' }}
         run: |
-          python3 ./.github/rename_platform.py
+          python ./.github/rename_platform.py
 
       - name: Publish to PyPI
         env:
