@@ -38,11 +38,6 @@ img.putdata(result)
 img.show()
 ~~~
 
-
-## 问题
-- ~~能力不足，linux 用户请自行编译~~
-
-
 ## 致谢
 - [Quadim](https://github.com/eternal-io/quadim)
 - [PyO3](https://github.com/PyO3/pyo3)
